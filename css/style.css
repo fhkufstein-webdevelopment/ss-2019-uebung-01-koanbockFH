@@ -1,4 +1,69 @@
 
+/*
+Aufgabe 3
+*/
+header .inner,
+#main
+{
+    margin: 0 auto;
+    max-width: 990px;
+}
+
+.level_1 {
+    margin: 0;
+    padding: 0;
+}
+
+.level_1 > li {
+    position: relative;
+    display: inline-block;
+    list-style: none;
+    margin: 0 10px 0 0;
+}
+
+.level_1 > li:last-child {
+    margin-right: 0;
+}
+
+.level_1 > li > a {
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #337ab7;
+}
+
+.level_2 {
+    position: absolute;
+    display: none;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    top: 23px;
+    min-width: 180px;
+    background: #ffffff;
+}
+
+/*level_2 on Hover*/
+.level_1 > li:hover > .level_2 {
+    display: block;
+}
+
+.level_2 > li {
+    list-style: none;
+}
+
+.level_2 > li > a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #337ab7;
+}
+
+.level_2 > li > a:hover {
+    background: #337ab7;
+    color: #ffffff;
+}
 
 
 body {
